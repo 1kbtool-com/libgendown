@@ -58,7 +58,7 @@
             a = t.content.querySelectorAll("a");
             a[0].setAttribute('href', site + md5);
             //a[0].setAttribute('target','_blank');
-            a[0].textContent = site.split('//')[1].split('.')[1]
+            a[0].textContent = site.split('//')[1].split('.')[1].split('/')[0]
             let clone = document.importNode(t.content, true);
             pub.appendChild(clone)
         }
@@ -69,7 +69,7 @@
                 add(i)
             }, function () {
                 //处理reject的代码
-                console.log("程序被置为了reject");
+                console.log("404");
             })
         };
     </script>
