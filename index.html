@@ -64,12 +64,12 @@
         }
 
         for (let i = 0; i < sites.length; i++) {
-            testUrl(sites[i] + md5).then(function (data) {
+            testUrl(sites[i] + md5).then(function () {
                 //处理resolve的代码
                 add(i)
-            }, function (data) {
+            }, function () {
                 //处理reject的代码
-                console.log("程序被置为了reject", data);
+                console.log("程序被置为了reject");
             })
         };
     </script>
