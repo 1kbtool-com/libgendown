@@ -64,7 +64,7 @@
         }
 
         for (let i = 0; i < sites.length; i++) {
-            testUrl(sites[i] + md5).then(function () {
+            testUrl('https://cors-anywhere.1kbtool.com/?'+sites[i] + md5).then(function () {
                 //处理resolve的代码
                 add(i)
             }, function () {
