@@ -66,7 +66,7 @@
         for (let i = 0; i < sites.length; i++) {
             testUrl(sites[i] + md5).then(function (data) {
                 //处理resolve的代码
-                console.log("Promise被置为resolve", data);;
+                add(i)
             }, function (data) {
                 //处理reject的代码
                 console.log("程序被置为了reject", data);
